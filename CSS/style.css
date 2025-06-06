@@ -59,3 +59,11 @@
         grid-template-areas: ;
     }
 }
+h1{
+    color: blue;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    color: #EA526F;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
