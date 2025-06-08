@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formularios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="JS/script.js" defer></script>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
+    <h1><center>Yahoon't</center></h1>
+    <h2>Formulario de inscripcion</h2>
+    <form>
+        <div class="grupo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre">
+        </div>
+        <div class="grupo">
+            <label for="email">Correo electronico</label>
+            <input type="email" id="email">
+        </div>
+        <div class="grupo" id="como">
+            <label for="seEntero">Como te enteraste de nosotros?</label>
+            <select id="seEntero">
+                <option value="">Seleccione</option>
+                <option value="1">Redes</option>
+                <option value="2">Comentarios</option>
+                <option value="3">Otros</option>
+            </select>
+        </div>
+        <div class="grupo escondido" id="bloqueOtroTema">
+            <label for="mensaje">Especifique:</label>
+            <textarea name="especifique" id="especifique"></textarea>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p><center>-2025 Yahoon't-</center></p>
+        </div>
+
+    </form>
 </body>
 </html>

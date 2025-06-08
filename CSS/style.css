@@ -1,55 +1,72 @@
 .container{
     grid-template-areas: 
-    "Header Header"
     "Nav Nav"
     "Section Section"
+    "Header Header"
     "footer footer";
     display: grid;
     grid-template-columns: 3fr 1fr;
     min-height: 100vh;   
 }
-
 a{
     text-decoration: none;
     color: darkblue;
 }
-
 a:hover{
     text-decoration: underline;
-    color: blue
+    color: blue;
+}
+
+.Nav{
+    background: #E8D6CB;
+    grid-area: Nav;
+    padding: 1rem;
+}
+.Nav h1{
+    text-align: center;
+    color: #5D2E46;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Nav p{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Section{
+    background: #B58DB6;
+    grid-area: Section;
+    padding: 1rem;
+}
+
+.Section p{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .Header{
-    background: #EA526F;
+    background: #D0ADA7;
     grid-area: Header ;
-    padding: 1rem;
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem ;
 }
-.Nav{
-    background: #E76B74;
-    grid-area: Nav ;
-    padding: 1rem;
-    
 
-}
-.Section{
-    background: #D7AF70;
-    grid-area: Section ;
-    padding: 1rem;
-
-}
 .footer{
-    background: #937D64;
-    grid-area: footer ;
+    background: lightblue;
+    grid-area: footer;
     padding: 1rem;
 }
 .footer p{
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 
+
 .Nav ul{
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    padding: 1rem;
+    gap: 1rem;
+}
+.Header ul{
     display: grid;
     grid-auto-flow: column;
     list-style: none;
@@ -60,21 +77,39 @@ a:hover{
 @media(max-width: 1023px){
     .container{
         grid-template-areas: 
-        "Header"
         "Nav"
         "Section"
+        "Header"
         "footer";
         grid-template-columns: 1fr;
     }
-.Nav ul{
+    .Nav ul{
         grid-auto-flow: row;
-}
     }
+}
 
 @media(max-width: 767px){
-    .Header{
+    .Section{
         display: none;
     }
 }
 
+body{
+    font-family: "Edu SA Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.grupo{
+    display: block;
+    margin-bottom: 15px;
+}
+
+input, select, textarea, button{
+    display: block;
+}
+
+.escondido{
+    display: none;
+}
