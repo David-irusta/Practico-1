@@ -10,38 +10,50 @@
     <script src="JS/script.js" defer></script>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
-    <h1><center>Yahoon't</center></h1>
-    <h2>Formulario de inscripcion</h2>
-    <form>
-        <div class="grupo">
-            <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre">
+<body> 
+    <div class="container">
+        <div class="Nav">
+            <h1><center>Yahoon't</center></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
+            </ul>
         </div>
-        <div class="grupo">
-            <label for="email">Correo electronico</label>
-            <input type="email" id="email">
-        </div>
-        <div class="grupo" id="como">
-            <label for="seEntero">Como te enteraste de nosotros?</label>
-            <select id="seEntero">
-                <option value="">Seleccione</option>
-                <option value="1">Redes</option>
-                <option value="2">Comentarios</option>
-                <option value="3">Otros</option>
-            </select>
-        </div>
-        <div class="grupo escondido" id="bloqueOtroTema">
-            <label for="mensaje">Especifique:</label>
-            <textarea name="especifique" id="especifique"></textarea>
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
+        <div class="Header"></div>
+        <div class="Section">
+            <h2>Como se entero de nosotros?</h2>
+            <form>
+                <div class="grupo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre">
+                </div>
+                <div class="grupo">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="grupo" id="como">
+                    <label for="seEntero">Como te enteraste de nosotros?</label>
+                    <select id="seEntero">
+                        <option value="">Seleccione</option>
+                        <option value="1">Redes</option>
+                        <option value="2">Comentarios</option>
+                        <option value="3">Otros</option>
+                    </select>
+                </div>
+                <div class="grupo escondido" id="bloqueOtroTema">
+                    <label for="mensaje">Especifique:</label>
+                    <textarea name="especifique" id="especifique"></textarea>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
         </div>
         <div class="footer">
             <p><center>-2025 Yahoon't-</center></p>
         </div>
-
-    </form>
+    </div>
 </body>
 </html>
