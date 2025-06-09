@@ -27,20 +27,11 @@ a:hover{
     color: #5D2E46;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.Nav p{
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 .Section{
     background: #B58DB6;
     grid-area: Section;
     padding: 1rem;
-}
-
-.Section p{
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .Header{
@@ -53,9 +44,6 @@ a:hover{
     background: lightblue;
     grid-area: footer;
     padding: 1rem;
-}
-.footer p{
-    color: white;
 }
 
 
