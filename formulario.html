@@ -25,13 +25,14 @@
         </div>
         <div class="Header"></div>
         <div class="Section">
-            <h2>Como se entero de nosotros?</h2>
-            <form>
-                <div class="grupo">
-                    <label for="nombre">Nombre completo</label>
+            <h2><center>Contactanos: </center></h2>
+            <center>
+                <form id="formulario">
+                <div class="grupo" id="nombre">
+                    <label for="nombre">Nombre y apellido</label>
                     <input type="text" id="nombre">
                 </div>
-                <div class="grupo">
+                <div class="grupo" id="correo">
                     <label for="email">Correo electronico</label>
                     <input type="email" id="email">
                 </div>
@@ -45,13 +46,16 @@
                     </select>
                 </div>
                 <div class="grupo escondido" id="bloqueOtroTema">
-                    <label for="mensaje">Especifique:</label>
+                    <label for="especifique">Especifique:</label>
                     <textarea name="especifique" id="especifique"></textarea>
-                    <div>
-                        <button type="submit">Enviar</button>
-                    </div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="menasaje"></textarea>
+                </div>
+                <div>
+                    <button type="submit" id="boton">Enviar</button>
                 </div>
             </form>
+            </center>
         </div>
         <div class="footer">
             <p><center>-2025 Yahoon't-</center></p>

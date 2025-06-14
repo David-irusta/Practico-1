@@ -8,6 +8,21 @@
     grid-template-columns: 3fr 1fr;
     min-height: 100vh;   
 }
+
+.centrar-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#formulario{
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    width: 300px;
+}
+
 a{
     text-decoration: none;
     color: darkblue;
@@ -78,7 +93,12 @@ a:hover{
 
 @media(max-width: 767px){
     .Section{
-        display: none;
+        grid-template-areas: 
+        "Nav" 
+        "Section"
+        "Header" 
+        "footer";
+        grid-template-columns: 0.5fr;
     }
 }
 
